@@ -1,0 +1,394 @@
+@font-face {
+    font-family: Bahnschrift;
+    src: url("./font/BAHNSCHRIFT.TTF");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 90vw;
+}
+
+button {
+    border: none;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    color: #F0F0F0;
+}
+
+table {
+    margin: 20px;
+}
+
+table,
+th,
+td {
+    border: 2px solid #292323;
+    border-collapse: collapse;
+}
+
+table tbody tr td:nth-child(3) {
+    border-right: 4px solid #292323;
+}
+
+table tbody tr td:nth-child(6) {
+    border-right: 4px solid #292323;
+}
+
+table tbody tr:nth-child(4) {
+    border-top: 4px solid #292323;
+}
+
+table tbody tr:nth-child(7) {
+    border-top: 4px solid #292323;
+}
+
+td {
+    width: 25px;
+    height: 25px;
+}
+
+body {
+    font-size: 18px;
+    font-family: Bahnschrift;
+    margin: 0;
+}
+
+body {
+    background-image: url("./img/liquid-cheese.png");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.element:nth-child(1) {
+    height: 100vh;
+}
+
+.element {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.element:nth-child(2) {
+    background-color: #292323;
+    box-shadow: #292323 5px 5px 15px;
+    color: #F0F0F0;
+}
+
+.element:nth-child(3n+4) {
+    background-color: #292323;
+    box-shadow: #292323 5px 5px 10px;
+    border: none;
+    color: #F0F0F0;
+}
+
+
+.element span {
+    color: #E50A0A;
+    position: relative;
+    top: -4px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #292323;
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+nav {
+    display: flex;
+    width: 40vw;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FEF5E7;
+    transition-duration: 0.2s;
+}
+
+a:visited {
+    color: #FEF5E7;
+    transition-duration: 0.2s;
+}
+
+nav a:hover {
+    color: #b3ae99;
+    transition-duration: 0.2s;
+}
+
+header img {
+    width: 80px;
+}
+
+.accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.accueil-content {
+    text-align: center;
+}
+
+.regle-content-main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.regle-content-grille img {
+    width: 70%;
+}
+
+.regle-content-texte {
+    text-align: left;
+    width: 50vw;
+}
+
+.regle-content-texte p {
+    margin: 40px
+}
+
+.grilles-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.grilles-main-content button label {
+    color: #272727;
+}
+
+.grilles-main-content div {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+.grille-facile button {
+    color: #292323;
+}
+
+.grille-moyenne button {
+    color: #292323;
+}
+
+.grille-difficile button {
+    color: #292323;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.solution-facile {
+    visibility: hidden;
+}
+
+.solution-moyen {
+    visibility: hidden;
+}
+
+.solution-difficile {
+    visibility: hidden;
+}
+
+input[name="grille_facile"]:checked~.solution-facile {
+    visibility: visible;
+}
+
+input[name="grille_moyen"]:checked~.solution-moyen {
+    visibility: visible;
+}
+
+input[name="grille_difficile"]:checked~.solution-difficile {
+    visibility: visible;
+}
+
+.histoire-main-content {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 90%;
+    flex: 1;
+}
+
+.histoire-main-content div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.histoire-main-content div img {
+    width: 700px;
+}
+
+.histoire-main-content div p {
+    width: 700px;
+}
+
+.sites-content {
+    width: 100%;
+}
+
+.sites-main-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 150px;
+}
+
+
+.jeux-main-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 150px;
+}
+
+.card {
+    width: 20%;
+    background-color: #2923231c;
+    transition-duration: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.card div {
+    margin: 20px;
+    background-color: #565656;
+    width: 80%;
+    border-radius: 25px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F0F0F0;
+}
+
+.card:hover {
+    background-color: #29232359;
+    transition-duration: 0.2s;
+    transform: scale(1.1);
+}
+
+.card img {
+    width: 70%;
+}
+
+.jeux-content {
+    width: 100%;
+}
+
+.credits-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.credits-content img {
+    border-radius: 50%;
+    width: 70%;
+}
+
+
+
+
+@media (max-width: 641px) {
+
+    nav {
+        display: flex;
+        width: 70vw;
+        justify-content: space-evenly;
+    }
+
+    nav a {
+        width: 12vw;
+    }
+
+    
+
+    .regle-content-main {
+        flex-direction: column;
+
+    }
+    .regle-content-texte{
+        margin: 5px;
+        width: 80vw;
+        text-align: justify;
+    }
+    .regle-content-texte p {
+        margin: 5px
+    }
+
+    .grilles-main-content div {
+        flex-direction: column;
+    }
+
+    .histoire-main-content {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        width: 90%;
+        flex: 1;
+    }
+    
+    .histoire-main-content div {
+        display: block;
+        justify-content: space-evenly;
+    }
+    
+    .histoire-main-content div img {
+        width: 80vw;
+    }
+    
+    .histoire-main-content div p {
+        width: 80vw;
+    }
+    .sites-main-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width : 60vw;
+    }
+
+    .card:hover {
+        background-color: #29232359;
+        transition-duration: 0.0s;
+        width: 80vw;
+    }
+
+    .jeux-main-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .credits-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}

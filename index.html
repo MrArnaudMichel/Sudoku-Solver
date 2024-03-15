@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="accueil element" id="accueil">
+        <header>
+            <img src="./img/logoblanc.png" alt="logo du site">
+            <div class="navbar">
+                <nav>
+                    <a href="#accueil">Accueil</a>
+                    <a href="#regles">Règles</a>
+                    <a href="#grilles">Grilles</a>
+                    <a href="#histoire">Histoire du jeu</a>
+                    <a href="#sites">Site de jeux</a>
+                    <a href="#jeux">Jeux de société</a>
+                </nav>
+            </div>
+        </header>
+        <div class="accueil-content">
+            <h1>Bienvenue sur SUD<span>●</span>KU</h1>
+            <p>Votre solveur de Sudoku préféré !</p>
+        </div>
+    </div>
+
+    <div class="element" id="regles">
+        <div class="regle-content">
+            <h2>Règles du sudoku</h2>
+            <div class="regle-content-main">
+                <div class="regle-content-grille">
+                    <img src="./img/grille.png" alt="grille de sudoku">
+                </div>
+                <div class="regle-content-texte">
+                    <p>Utilisez les numéros 1-9<br>
+                        Sudoku est joué sur une grille de 9 x 9 espaces. Dans les lignes et les colonnes sont 9
+                        "carrés" (composé de 3 x 3 espaces). Chaque rangée, colonne et carré (9 espaces chacun) doit
+                        être rempli avec les numéros 1-9, sans répéter aucun nombre dans la rangée, la colonne ou le
+                        carré. Ça a l'air compliqué? Comme vous pouvez le voir sur l'image ci-dessous d'une grille
+                        de Sudoku réelle, chaque grille de Sudoku est livré avec quelques espaces déjà remplis; plus
+                        les espaces sont remplis, plus le jeu est facile – plus les énigmes de Sudoku sont
+                        difficiles, mais il y a très peu d'espaces qui sont déjà remplis.
+                    </p>
+                    <p>Ne devinez pas<br>
+                        Sudoku est un jeu de logique et de raisonnement, donc vous ne devriez pas avoir à deviner.
+                        Si vous ne savez pas quel numéro mettre dans un certain espace, continuer à numériser les
+                        autres zones de la grille jusqu'à ce que vous avez vu l'occasion de placer un nombre. Mais
+                        n'essayez pas de "forcer" quoi que ce soit-Sudoku récompenses patience, des idées, et la
+                        reconnaissance des modèles, pas de chance aveugle ou deviner.
+                    </p>
+                    <p>Utiliser le processus d'élimination<br>
+                        Les règles de Sudoku sont relativement simples – mais le jeu est infiniment varié, avec des
+                        millions de combinaisons de nombres possibles et un large éventail de niveaux de difficulté.
+                        Mais tout est basé sur les principes simples de l'utilisation des nombres 1-9, remplissant
+                        les espaces vides basés sur le raisonnement déductif, et ne répétant jamais aucun nombre
+                        dans chaque carré, rangée ou colonne.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="element" id="grilles">
+        <div class="grilles-content">
+            <h2>Grilles de jeu</h2>
+            <div class="grilles-main-content"><div>
+<table class="grille-facile">
+<tbody>
+<tr>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+<td>4</td>
+</tr>
+<tr>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>9</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>5</td>
+<td>4</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0</td>
+<td>2</td>
+<td>7</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+</tr>
+<tr>
+<td>7</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<input type="checkbox" name="grille_facile" id="grille_facile"><button><label for="grille_facile">Afficher la solution</label></button>
+<table class="solution-facile">
+<tbody>
+<tr>
+<td>2</td>
+<td>4</td>
+<td>5</td>
+<td>9</td>
+<td>8</td>
+<td>1</td>
+<td>3</td>
+<td>7</td>
+<td>6</td>
+</tr>
+<tr>
+<td>1</td>
+<td>6</td>
+<td>9</td>
+<td>2</td>
+<td>7</td>
+<td>3</td>
+<td>5</td>
+<td>8</td>
+<td>4</td>
+</tr>
+<tr>
+<td>8</td>
+<td>3</td>
+<td>7</td>
+<td>5</td>
+<td>6</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+<td>9</td>
+</tr>
+<tr>
+<td>9</td>
+<td>7</td>
+<td>6</td>
+<td>1</td>
+<td>2</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+<td>8</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1</td>
+<td>3</td>
+<td>4</td>
+<td>9</td>
+<td>8</td>
+<td>6</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr>
+<td>4</td>
+<td>8</td>
+<td>2</td>
+<td>7</td>
+<td>3</td>
+<td>6</td>
+<td>9</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>9</td>
+<td>1</td>
+<td>6</td>
+<td>5</td>
+<td>7</td>
+<td>8</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr>
+<td>7</td>
+<td>2</td>
+<td>8</td>
+<td>3</td>
+<td>4</td>
+<td>9</td>
+<td>1</td>
+<td>6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>6</td>
+<td>5</td>
+<td>4</td>
+<td>8</td>
+<td>1</td>
+<td>2</td>
+<td>7</td>
+<td>9</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="grille-moyen">
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+<td>0</td>
+<td>7</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>8</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+</tr>
+<tr>
+<td>9</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>3</td>
+<td>4</td>
+<td>0</td>
+<td>5</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<input type="checkbox" name="grille_moyen" id="grille_moyen"><button><label for="grille_moyen">Afficher la solution</label></button>
+<table class="solution-moyen">
+<tbody>
+<tr>
+<td>4</td>
+<td>6</td>
+<td>2</td>
+<td>8</td>
+<td>3</td>
+<td>1</td>
+<td>9</td>
+<td>5</td>
+<td>7</td>
+</tr>
+<tr>
+<td>7</td>
+<td>9</td>
+<td>5</td>
+<td>4</td>
+<td>2</td>
+<td>6</td>
+<td>1</td>
+<td>8</td>
+<td>3</td>
+</tr>
+<tr>
+<td>3</td>
+<td>8</td>
+<td>1</td>
+<td>7</td>
+<td>9</td>
+<td>5</td>
+<td>4</td>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr>
+<td>1</td>
+<td>7</td>
+<td>3</td>
+<td>9</td>
+<td>8</td>
+<td>4</td>
+<td>2</td>
+<td>6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>6</td>
+<td>5</td>
+<td>9</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>7</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2</td>
+<td>4</td>
+<td>8</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>3</td>
+<td>1</td>
+<td>9</td>
+</tr>
+<tr>
+<td>9</td>
+<td>2</td>
+<td>6</td>
+<td>1</td>
+<td>7</td>
+<td>8</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>8</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>9</td>
+<td>6</td>
+<td>7</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1</td>
+<td>7</td>
+<td>6</td>
+<td>4</td>
+<td>3</td>
+<td>8</td>
+<td>9</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table class="grille-difficile">
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>8</td>
+<td>0</td>
+<td>6</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>7</td>
+<td>0</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>6</td>
+<td>0</td>
+<td>9</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<input type="checkbox" name="grille_difficile" id="grille_difficile"><button><label for="grille_difficile">Afficher la solution</label></button>
+<table class="solution-difficile">
+<tbody>
+<tr>
+<td>4</td>
+<td>8</td>
+<td>3</td>
+<td>9</td>
+<td>2</td>
+<td>1</td>
+<td>6</td>
+<td>5</td>
+<td>7</td>
+</tr>
+<tr>
+<td>9</td>
+<td>6</td>
+<td>7</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>8</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>5</td>
+<td>1</td>
+<td>8</td>
+<td>7</td>
+<td>6</td>
+<td>4</td>
+<td>9</td>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+<td>4</td>
+<td>8</td>
+<td>1</td>
+<td>3</td>
+<td>2</td>
+<td>9</td>
+<td>7</td>
+<td>6</td>
+</tr>
+<tr>
+<td>7</td>
+<td>2</td>
+<td>9</td>
+<td>5</td>
+<td>6</td>
+<td>4</td>
+<td>1</td>
+<td>3</td>
+<td>8</td>
+</tr>
+<tr>
+<td>1</td>
+<td>3</td>
+<td>6</td>
+<td>7</td>
+<td>9</td>
+<td>8</td>
+<td>2</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>3</td>
+<td>7</td>
+<td>2</td>
+<td>6</td>
+<td>8</td>
+<td>9</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td>8</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>3</td>
+<td>7</td>
+<td>6</td>
+<td>9</td>
+</tr>
+<tr>
+<td>6</td>
+<td>9</td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+<td>7</td>
+<td>3</td>
+<td>8</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="element" id="histoire">
+    <div class="histoire-content">
+        <h2>Histoire du jeu</h2>
+    </div>
+    <div class="histoire-main-content">
+        <div>
+            <p>L'histoire du Sudoku remonte à un jeu de mathématicien suisse du XVIIIe siècle appelé "latin squares"
+                (selon cet article de The Economist) et quelques-uns des premiers numéros de puzzles à apparaître
+                dans les journaux ont été publiés en France en 1895. Mais le jeu moderne de Sudoku comme nous le
+                reconnaissons aujourd'hui a été inventé par Howard Garns, un inventeur de puzzle freelance de
+                Connersville, Indiana, USA en 1979 quand il a été publié dans les puzzles de crayon de Dell et le
+                magazine de jeux de mot. Le puzzle était connu sous le nom de "Number place", car il impliquait de
+                placer des numéros individuels dans des endroits vides sur une grille 9 x 9.
+                Le jeu est apparu pour la première fois au Japon en 1984 où il a été donné le nom de "Sudoku", qui
+                est court pour une expression plus longue en japonais-"Sūji wa makushn ni kagiru"-ce qui signifie,
+                "les chiffres sont limités à un événement." Sudoku continue d'être très populaire au Japon, où les
+                gens achètent plus de 600 000 magazines de Sudoku par mois.
+
+            </p>
+            <img src="./img/map.png" alt="">
+        </div>
+        <div>
+            <img src="./img/image_sudoku.png" alt="">
+            <p>Une des raisons que les puzzles de Sudoku sont si aimés au Japon, c'est parce que la langue japonaise
+                ne fonctionne pas très bien pour les mots croisés-si un puzzle de nombre a été beaucoup plus de
+                succès dans la culture japonaise. En outre, le Japon a tendance à aimer les énigmes, car c'est un
+                pays où des millions de personnes font des trajets longs en train ou en bus, et ils ont besoin de
+                tuer le temps en attendant le prochain arrêt.
+                L'homme qui a réintroduit Sudoku "retour" au monde occidental était un juge néo-zélandais nommé
+                Wayne Gould, qui était en vacances à Tokyo en mars 1997 quand il a découvert Sudoku dans une
+                librairie. Il est rapidement devenu un fervent passionné de Sudoku et a passé les six prochaines
+                années à développer un programme informatique qui pourrait générer des énigmes de Sudoku.
+
+            </p>
+        </div>
+
+    </div>
+
+</div>
+<div class="element" id="sites">
+    <div class="sites-content">
+        <h2>Sites de jeux</h2>
+        <div class="sites-main-content">
+            <div class="card">
+                <img src="./img/2048.png" alt="">
+                <p>Le but du 2048 est de fusionner des dalles entre elles pour atteindre le nombre de 2048. Ce jeux demande de la stratégie et de la réflexion.</p>
+                <img src="./img/note4_5.png" alt="">
+                <div>
+                    <a target="_blank" href="https://jeu2048.fr/"><button>Jouer au 2048</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/mots_fleches.png" alt="">
+                <p>Les mots fléchés sont un classique du genre. Une définition vous est donnée afin de compléter les cases prévue à cet effet. </p>
+                <img src="./img/note2_5.png" alt="">
+                <div>
+                    <a target="_blank" href="https://www.notretemps.com/jeux/jeux-en-ligne/mots-fleches"><button>Jouer aux mots fléchés</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/mots_croises.png" alt="">
+                <p>Les mots croisés sont aussi un classique. Il faut trouver les mots cachés dans une grille de lettre. Ils sont parfois en diagonale et même en diagonale miroir !</p>
+                <img src="./img/note3_5.png" alt="">
+                <div>
+                    <a target="_blank" href="https://www.notretemps.com/jeux/jeux-en-ligne/mots-croises"><button>Jouer aux mots croisés</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="element" id="jeux">
+    <div class="jeux-content">
+        <h2>Jeu de société</h2>
+        <div class="jeux-main-content">
+            <div class="card">
+                <img src="./img/monopoly.png" alt="">
+                <p>Le Monopoly est un jeu de société ou le but du jeu consiste à ruiner ses adversaires par des
+                    opérations immobilières. Il se fait tour a tour en lanceant des dé
+                </p>
+                <img src="./img/note3_5.png" alt="">
+                <div>
+                    <p>30€</p>
+                </div>
+                <div>
+                    <a target="_blank" href="https://monopoly.hasbro.com/fr-fr"><button>Acheter</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/cluedo.png" alt="">
+                <p>Le Cluedo est un jeu de société dans lequel les joueurs doivent découvrir parmi eux qui est
+                    le meurtrier d'un crime commis dans un manoir anglais, le Manoir Tudor.</p>
+                <img src="./img/note3_5.png" alt="">
+                <div>
+                    <p>30€</p>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.amazon.fr/HASBRO-38712-Cluedo-Jeu-Plateau/dp/B01C56A128"><button>Acheter</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/loup_garou.png" alt="">
+                <p>Les Loups-garous de Thiercelieux est un jeu de société d'ambiance dans lequel chaque joueur
+                    incarne un villageois ou un loup-garou, et dont le but général est d’annihiler le camp
+                    adverse.</p>
+                <img src="./img/note3_5.png" alt="">
+                <div>
+                    <p>20€</p>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.loups-garous-en-ligne.com/"><button>Acheter</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+<div class="element" id="credits">
+    <h1>Crédits</h1>
+    <div class="credits-content">
+        <div class="card">
+            <img src="./img/arnaud.jpg" alt="photo d'arnaud">
+            <p><strong>Arnaud Michel</strong><br>1ère année de BUT Informatique à l'IUT Robert Schuman</p>
+        </div>
+        <div class="card">
+            <img src="./img/amaury.png" alt="photo d'amaury">
+            <p><strong>Amaury Finckbohner</strong><br>1ère année de BUT Informatique à l'IUT Robert Schuman</p>
+        </div>
+    </div>
+</div>
+<div class="element">
+    <footer>
+        <p>Ce site a été réalisé lors du projet de SAE 1.1</p>
+    </footer>
+</div>
+
+
+</body>
+
+</html>
