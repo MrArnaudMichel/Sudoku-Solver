@@ -2,6 +2,8 @@
 
 Ce projet est une application en C# conçue pour résoudre des grilles de Sudoku.
 
+Le site web est disponible à cette adresse: https://mrarnaudmichel.github.io/Sudoku-Solver/
+
 ## Fonctionnalités
 
 - Résolution de grilles de Sudoku de taille standard (9x9) et étendues (16x16)
